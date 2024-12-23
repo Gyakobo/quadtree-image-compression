@@ -24,7 +24,7 @@ In this example specifically we shall be compressing a grayscale image. Given th
 
 One method to compress an image is to store it in a tree data structure where each node would have up to 4 children. Each of them shall represent a select partition of the image in one of the four quartiles: northwest, northeast, southwest, and southeast. Needless to say, the root node marked with a `-1` will either represent the entire image or another subset of partitions. The partitioning process will continue till each node in the partitioned subset carries the same color intensity. 
 
-1) Let's consider the following image content from the given [sample.txt](https://github.com/Gyakobo/tree-image-compression/blob/main/sample.txt):
+1) Let's consider the following image content from the given [input.txt](https://github.com/Gyakobo/tree-image-compression/blob/main/input.txt):
 
 | 3 | 3 | 3 | 3 | 2 | 2 | 1 | 1 |
 |---|---|---|---|---|---|---|---|
